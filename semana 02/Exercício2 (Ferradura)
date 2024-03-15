@@ -1,0 +1,4 @@
+valorDaFerradura = 80
+quantoCusta = float(input("quantas ele irá querer? "))
+valorTotal = valorDaFerradura * quantoCusta
+print(valorTotal)
