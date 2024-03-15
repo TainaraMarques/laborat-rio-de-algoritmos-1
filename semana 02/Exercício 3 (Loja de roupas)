@@ -1,0 +1,3 @@
+precoRoupa =  float(input("Digite o valor da roupa: "))
+precoDaLoja =  precoRoupa * 1.30
+print(precoDaLoja)
