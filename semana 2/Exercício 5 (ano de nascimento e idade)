@@ -1,0 +1,3 @@
+anoDeNascimento = int(input("Digite seu ano de nascimento"))
+idade = 2024 - anoDeNascimento
+print(idade)
