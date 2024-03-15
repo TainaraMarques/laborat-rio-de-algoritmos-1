@@ -1,0 +1,4 @@
+ValorDoMelão = 4.25
+quantoCusta= float(input("quantos ele vai querer?"))
+valorTotal = ValorDoMelão * quantoCusta
+print (valorTotal)
