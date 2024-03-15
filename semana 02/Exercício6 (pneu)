@@ -1,0 +1,4 @@
+ValorDoPneu = 395.40
+TotalDeCarros= int(input("Digite o total de carros"))
+valorTotal = TotalDeCarros * ValorDoPneu
+print(valorTotal)
