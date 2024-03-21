@@ -1,0 +1,13 @@
+v1 = float(input("digite um número "))
+v2 = float(input("digite outro número "))
+
+if v1 > v2:
+    print ("o maior valor é ",v1)
+    print ("o menor valor é ", v2)
+
+elif v2 > v1: 
+    print ("o maior valor é ", v2)
+    print ("o menor valor é ", v1)
+
+elif v1 == v2: 
+    print ("os valores são iguais")
