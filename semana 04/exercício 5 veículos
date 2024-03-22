@@ -1,0 +1,22 @@
+print("a- motos e triciculos")
+print ("b- carros de passeio")
+print("c- veículos de carga acima de 3,5 toneladas")
+print("d- veículos com unidade acoplada acima de 6 toneladas")
+
+carteira = input("informe o seu tipo de carteira")
+
+if carteira == "a":
+  print("você só pode dirigir motos e triciculos")
+
+elif carteira == "b":
+  print("você só pode dirigir carros de passeio")
+
+elif carteira == "c":
+   print("você só pode dirigir veículos de carga acima de 3,5 toneladas")
+
+elif carteira == "d":
+  print("você só pode dirigir veículos com mais de 8 passageiros")
+
+elif carteira == "e":
+  print ("você só pode dirigir veículos com unidade acoplada acima de 6 toneladas")
+  
