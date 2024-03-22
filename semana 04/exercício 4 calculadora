@@ -1,0 +1,27 @@
+v1 = float(input("digite um valor: "))
+v2 = float(input("digite outro valor: "))
+
+print ("1- somar os dois valores")
+print ("2- subtrair os dois valores")
+print ("3- multiplicar os dois valores")
+print ("4- dividir os dois valores")
+
+ope = input("escolha uma das opçoes acima ")
+ # ope é a abreviação de opção escolhida
+
+if ope == "1":
+   r = v1 + v2
+   print ("o resultado do cálculo é ", r)
+
+
+if ope == "2":
+   r = v1-v2
+   print ("o resultado do cálculo é ", r)
+
+if ope == "3":
+   r = v1*v2
+   print ("o resultado do cálculo é ", r)
+
+if ope == "4":
+   r = v1/v2
+   print ("o resultado do cálculo é ", r)
