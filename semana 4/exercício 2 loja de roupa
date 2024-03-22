@@ -1,0 +1,26 @@
+valorP = float(input("digite o valor da peça "))
+
+print ("1 - Á vista")
+print ("2 - Parcelar em 2 vezes")
+print ("3 - Parcelar em 3 vezes")
+
+opcoes = int(input("escolha a opção de pagamento 1,2 ou 3 "))
+
+if opcoes == 1:
+    avista = valorP
+    print("o pagamento á vista é igual a", avista)
+
+
+elif opcoes == 2:
+    V2 = valorP / 2
+    print ("o pagamento em 2 vezes é igual a", V2)
+
+elif opcoes == 3:
+    V3 = valorP /3
+    print ("o valor em 3 vezes é igual a ", V3)
+ 
+
+    
+
+
+
