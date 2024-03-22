@@ -1,0 +1,13 @@
+resposta = input("qual foi a sua resposta? ")
+
+if resposta == "a":
+    print ("resposta incorreta")
+
+elif resposta == "b":
+    print ("resposta correta")
+
+elif resposta == "c":
+    print ("resposta incorreta")
+
+elif resposta == "d":
+    print ("resposta incorreta")
