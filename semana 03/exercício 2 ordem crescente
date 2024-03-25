@@ -1,0 +1,10 @@
+numero1 = float(input ("digite um número "))
+numero2 = float(input ("digite outro número "))
+
+if numero2 > numero1:
+   ordemC = numero2,numero1
+
+   print ( "a ordem crescente dos dois números é ", ordemC)
+else: 
+   ordemCR = numero1, numero2
+   print ("a ordem crescente dos dois números é", ordemCR)
