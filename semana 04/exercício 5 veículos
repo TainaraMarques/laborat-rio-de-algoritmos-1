@@ -1,8 +1,3 @@
-print("a- motos e triciculos")
-print ("b- carros de passeio")
-print("c- veículos de carga acima de 3,5 toneladas")
-print("d- veículos com unidade acoplada acima de 6 toneladas")
-
 carteira = input("informe o seu tipo de carteira")
 
 if carteira == "a":
