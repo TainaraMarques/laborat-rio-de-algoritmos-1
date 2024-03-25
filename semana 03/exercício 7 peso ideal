@@ -1,0 +1,12 @@
+h = float(input("qual é a sua altura "))
+genero = (input("qual é o seu gênero "))
+masculino = (72.7 * h) - 58
+feminino = (62.1 * h) - 44.7
+
+if genero == masculino:
+    print (masculino)
+
+else:
+    print (feminino)
+
+    
