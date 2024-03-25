@@ -1,0 +1,7 @@
+anoN = int(input('digite o ano do seu nascimento '))
+anoatual = int (input('digite o ano atual '))
+idade = anoatual - anoN
+if idade >= 16:
+    print('você pode votar')
+else:
+    print ('você não pode votar')
