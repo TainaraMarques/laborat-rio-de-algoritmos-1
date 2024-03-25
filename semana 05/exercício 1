@@ -1,0 +1,11 @@
+nome = input ("digite seu nome ")
+ts = int (input("digite a quantos anos você trabalha "))
+salario = float(input("informe seu salário atual "))
+
+if ts >= 5 and salario < 2000:
+     aumento = salario * 0.1
+     print ("você pode ter um aumento de ", aumento) 
+
+else:
+     aumento = salario * 0.05
+     print ("você pode ter um aumento de ", aumento) 
