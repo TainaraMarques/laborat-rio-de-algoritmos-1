@@ -1,1 +1,7 @@
-
+horast = float(input("horas trabalhadas no mês ")) 
+salario = horast * 35
+if salario < 1000:
+  salariofinal = salário+300
+  print ("seu salário mensal é", salariofinal)
+else:
+  print ("seu salario mensal é ", salario)
