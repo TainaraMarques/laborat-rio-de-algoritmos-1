@@ -1,0 +1,18 @@
+
+l1 = float (input("digite o valor do primeiro lado "))
+l2 = float (input("digite o valor do segundo lado "))
+l3 = float (input("digite o valor do terceiro lado "))
+ # l1 = lado 1
+
+if l1 + l2 > l3 and l2 + l3 > l1 and l3 + l1 > l2:
+    print ("é um triângulo")
+    if l1 == l2 == l3:
+        print ("esse é um triângulo equilátero")
+    
+    elif l1 == l2 or l2 == l3 or l1 == l3:
+        print ("esse é um triângulo isóseles")
+        
+    else:
+        print ("esse é um triângulo escaleno")
+else:
+    print ("não é um triângulo")
