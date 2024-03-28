@@ -1,0 +1,27 @@
+kgmo = int (input("quantos kilogramas de morango você deseja comprar? "))
+kgma = int (input("quantos kilogramas de maça você deseja comprar? "))
+
+if kgmo <= 5:
+    pfmo = kgmo * 2.50
+    
+else:
+    pfmo = kgmo * 2.20  
+
+if kgma <= 5:
+    pfma = kgmo * 1.80
+    
+else:
+    pfma = kgmo * 1.50
+
+vt = pfmo + pfma
+kgf = kgmo + kgma
+
+if kgf > 8 or vt > 25:
+    vtd = vt / 0.1
+    print ("sua compra deu ", vtd)
+
+else:
+    print ("sua compra deu ", vt)
+
+    
+    
