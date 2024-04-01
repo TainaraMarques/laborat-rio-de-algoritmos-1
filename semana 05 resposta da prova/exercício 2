@@ -1,0 +1,12 @@
+n1 = int (input("informe um valor "))
+n2 = int (input("informe outro valor "))
+n3 = int (input("informe outro valor "))
+
+if n1>n2 and n1>n3:
+    print ("o maior número é ", n1)
+
+elif n2>n1 and n2>n3:
+    print("o maior número é ", n2)
+
+else:
+    print("o maior número é ", n3)
