@@ -1,0 +1,16 @@
+diadenascimento = int (input("informe o dia em que você nasceu "))
+mesdenascimento = int(input("informe o mês em que você nasceu "))
+anodenascimento = int (input("informe o ano em que você nasceu "))
+
+diaatual = int(input("informe o dia atual "))
+mesatual = int(input("informe o mês atual "))
+anoatual = int(input("informe o ano atual "))
+
+idadedia = diaatual - diadenascimento
+idademes = mesatual - mesdenascimento
+idadeano = anoatual - anodenascimento
+
+print (idadedia)
+print (idademes)
+print (idadeano)
+
