@@ -1,0 +1,16 @@
+salario = float (input("digite seu salario "))
+
+if salario > 3751.05:
+    imp = salario * 0.225
+    print(imp)
+
+elif salario > 2826.66 and salario < 3751.65:
+    imp = salario * 0.15
+    print (imp)
+
+elif salario >= 1903.99 and salario <= 2826.65:
+    imp = salario * 0.075
+    print (imp)
+
+elif salario <= 1903.98:
+    print ("seu imposto é isento")
