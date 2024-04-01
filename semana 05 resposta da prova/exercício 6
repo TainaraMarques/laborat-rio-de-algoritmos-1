@@ -1,0 +1,22 @@
+saldoatual = float(input("escolha uma opção "))
+
+print("1. sacar")
+print("2. depositar")
+print("3. saldo")
+
+resposta = input("escolha uma opção ")
+
+if resposta == "1" or resposta == "sacar":
+    sacar = float(input("quanto vc  quer sacar "))
+    if sacar > saldoatual:
+        print("não é possivel sacar")
+
+    else:
+        print("ação realizada com sucesso")
+
+if resposta == "2" or resposta == "depositar":
+    depositar = float(input("digite o quanto você quer depositar "))
+    print ("deposito realizado com sucesso")
+
+if resposta == "3" or resposta == "saldo":
+    print(saldoatual)
