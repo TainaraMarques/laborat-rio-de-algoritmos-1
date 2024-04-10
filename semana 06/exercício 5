@@ -1,0 +1,31 @@
+idade = 0 
+sexo = None
+salario = 0 
+pessoas = 0
+somasalario = 0
+mediadesalario = 0
+mulherescomsalario10000 = 0
+maioridade = 0
+menoridade = float('inf')
+contador = 0
+while pessoas < 10:
+    idade= int(input("Digite a sua idade: "))
+    sexo= input("Digite seu sexo: (M ou F) ").upper
+    salario= float(input("Digite seu salário "))
+    pessoas+=1
+
+    somasalario += salario
+    if idade > maioridade:
+        maioridade = idade
+    if idade < menoridade:
+        menoridade = idade
+
+    if sexo == 'F' and salario <= 10000:
+        mulherescomsalario10000 +=1
+    contador += 1
+
+mediasalario = somasalario / pessoas
+
+print ("A média de salário do grupo é ", mediasalario)
+print ("Maior e menor idade do grupo ", maioridade,"e", menoridade)
+print("Quantidade de mulheres com salário até R$10000,00", mulherescomsalario10000)
