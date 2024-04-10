@@ -1,0 +1,39 @@
+sacar = 0
+depositar = 0
+saldo = 0
+opcao = 0
+
+while opcao != 4:
+    saldoatual = float(input("informe seu saldo atual "))
+
+    print("1- Sacar")
+    print("2- Depositar")
+    print("3- Saldo")
+    print("4- Sair")
+
+
+    opcao = input("escolha uma das opções no menu ")
+
+    if opcao == "1":
+        sacar = float(input("digite o valor que você deseja sacar "))
+        if sacar < saldoatual:
+            print ("SAQUE REALIZADO COM SUCESSO")
+        
+        else:
+            print ('operação inválida')
+
+    elif opcao == "2":
+        depositar = float(input("digite op valor que você deseja depositar "))
+        print ("deposito realizado com sucesso")
+    
+    elif opcao == "3":
+        saldo = saldoatual + depositar
+        print ('seu saldo atual é ', saldo)
+
+    elif opcao == "4":
+        print("encerrando o processo")
+    
+
+    
+
+    
