@@ -1,0 +1,31 @@
+Opcao = 0
+Somaidade = 0
+Somaalturas = 0
+Pessoas = 0
+while Opcao != 3:
+    print("1- Cadastrar pessoa")
+    print("2- Mostrar média parcial")
+    print("3- Sair")
+    Opcao = int(input("Digite uma opção: "))
+    if Opcao == 1:
+        Idade = int(input("Digite a idade: "))
+        Altura = float(input("Digite sua altura:"))
+        Somaidade = Somaidade + Idade
+        Somaalturas = Somaalturas = Altura
+        Pessoas += 1
+    elif Opcao == 2:
+        if Pessoas > 0:
+            Medidadeidades = Somaidade / Pessoas
+            Mediadealturas = Somaalturas / Pessoas
+            print("Média Parcial das alturas: ", Mediadealturas)
+            print("Média Parcial das idades: ", Medidadeidades)
+        else:
+            print("Nenhuma cadastrada")
+    elif Opcao == 3:
+           if Pessoas > 0:
+            Medidadeidades = Somaidade / Pessoas
+            Mediadealturas = Somaalturas / Pessoas
+            print("Média Parcial das alturas: ", Mediadealturas)
+            print("Média Parcial das idades: ", Medidadeidades)
+    else:
+        print("Nenhuma cadastrada")
