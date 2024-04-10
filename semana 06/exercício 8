@@ -1,0 +1,11 @@
+contador = 0
+#contador de numeros entre  30 a 90
+numero = 0
+valor = 0
+while valor < 10:
+    numero = float(input("Digite um número: "))
+    valor+=1
+    if numero >= 30 and numero <= 90:
+        contador += 1
+        
+print("Quantidade de números entre 30 e 90:", contador)
