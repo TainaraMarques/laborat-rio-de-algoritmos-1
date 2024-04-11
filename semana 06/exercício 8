@@ -1,11 +1,27 @@
-contador = 0
-#contador de numeros entre  30 a 90
-numero = 0
-valor = 0
-while valor < 10:
-    numero = float(input("Digite um número: "))
-    valor+=1
-    if numero >= 30 and numero <= 90:
-        contador += 1
-        
-print("Quantidade de números entre 30 e 90:", contador)
+moradores=0
+elevadorA = 0
+elevadorB = 0
+elevadorC = 0
+
+while moradores < 10:
+    elevadores= input("qual elevador você utiliza com mais frequência? escolha A,B OU C ").upper()
+
+    if elevadores == "A":
+        elevadorA+=1
+
+    elif elevadores == "B":
+        elevadorB+=1
+
+    elif elevadores == "C":
+        elevadorC+=1
+    moradores+=1
+
+porcentagemA = (elevadorA/moradores)*100
+porcentagemB = (elevadorB/moradores)*100
+porcentagemC = (elevadorC/moradores)*100
+
+print("Total de pessoas que usam o elevador A", elevadorA, " ou seja ", porcentagemA,"%")
+print("Total de pessoas que usam o elevador B", elevadorB, " ou seja ", porcentagemB,"%")
+print("Total de pessoas que usam o elevador C" , elevadorC, " ou seja ", porcentagemC,"%")
+
+
