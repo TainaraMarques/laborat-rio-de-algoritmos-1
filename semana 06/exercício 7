@@ -1,5 +1,4 @@
 contador = 0
-#contador de numeros entre  30 a 90
 numero = 0
 valor = 0
 while valor < 10:
