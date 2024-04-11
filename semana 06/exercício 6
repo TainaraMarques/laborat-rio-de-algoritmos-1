@@ -4,9 +4,9 @@ pessoas = 0
 
 while pessoas < 10:
     idade = int(input("Digite sua idade "))
-    pessoas +=1
      
     if idade >= 18:
         maiordeidade +=1
+    pessoas +=1
 
 print ("a quantidade de maiores de idade é ", maiordeidade)
