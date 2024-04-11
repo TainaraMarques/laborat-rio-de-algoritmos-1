@@ -10,19 +10,19 @@ menoridade = float('inf')
 contador = 0
 while pessoas < 10:
     idade= int(input("Digite a sua idade: "))
-    sexo= input("Digite seu sexo: (M ou F) ").upper
+    sexo= input("Digite seu sexo: (M ou F) ").upper()
     salario= float(input("Digite seu salário "))
-    pessoas+=1
-
     somasalario += salario
+    
     if idade > maioridade:
         maioridade = idade
     if idade < menoridade:
         menoridade = idade
 
-    if sexo == 'F' and salario <= 10000:
+    if sexo == 'F' and salario >= 10000:
         mulherescomsalario10000 +=1
-    contador += 1
+        contador += 1
+    pessoas+=1
 
 mediasalario = somasalario / pessoas
 
