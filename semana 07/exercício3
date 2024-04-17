@@ -1,14 +1,15 @@
-primo = 0
-numero = int(input('digite um numero'))
-div = 2
+num = int(input("Digite um número inteiro positivo: "))
 
-while div < numero:
-    if numero % div == 0:
-        primo=1
-        break
-    div += 1
-    if primo >= 0:
-        print ('esse é um número primo')
+if num > 1:
+    divisor = 2
 
-    else: 
-        print ('esse não é um número primo')
+    while divisor < num:
+        if num % divisor == 0:
+            print(f"{num} não é um número primo.")
+            break
+        divisor += 1
+    else:
+        print('esse é um número primo.')
+        
+else:
+    print('esse não é um número primo.')
