@@ -1,0 +1,18 @@
+idade = 0
+pessoas = 0
+soma = 0
+
+while pessoas < 15:
+    idade = int (input('digite a sua idade'))
+    pessoas += 1
+    
+soma += idade
+
+if soma > 0 and soma <= 25:
+    print ('A média das idades é jovem')
+
+elif soma >= 26 and soma <= 60:    
+    print ('A média das idades é adulta')
+
+else:
+    print ('A média das idades é idosa')
