@@ -1,0 +1,23 @@
+idade = 0
+maioridade = 0
+menoridade = float('inf')  # Inicialize com um valor grande para garantir que qualquer idade digitada será menor
+media = 0
+pessoas = 0
+soma = 0
+
+while pessoas < 10:
+    idade = int(input('Digite a sua idade: '))
+    pessoas += 1
+    soma += idade
+
+    if idade > maioridade:
+        maioridade = idade
+
+    if idade < menoridade:
+        menoridade = idade
+
+media = soma / pessoas
+
+print('A maior idade é', maioridade)
+print('A menor idade é', menoridade)
+print('A média das idades é', media)
