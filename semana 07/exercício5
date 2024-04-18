@@ -1,0 +1,17 @@
+idade = int(input('informe a sua idade: '))
+while idade <0 or idade > 150:
+    idade = int(input("Idade inválida. Por favor, digite novamente: "))
+
+salario = float(input('digite seu sálario: '))
+while salario <= 0:
+    salario = float(input('salário inválido, tente novamente: '))
+
+sexo = input('informe seu genero F para feminino ou M para masculino: ').upper()
+while sexo != 'M' and sexo != 'F':
+    sexo = input('gênero inválido, tente novamente: ').upper()
+
+EC = input('informe seu estado civil s,c,d ou v: ').upper()
+while EC != 'S' and EC != 'C' and EC != 'D' and EC != 'V':
+    EC = input('Estado civil inválido, tente novamente: ').upper()
+
+print ('suas informações são válidas')
