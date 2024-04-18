@@ -1,0 +1,18 @@
+print("Lojas Tabajara")
+total = 0
+num_produto = 1
+
+while num_produto!= 0:
+    preco = float(input("Produto: R$ "))
+    if preco == 0:
+        break
+    total += preco
+    num_produto += 1
+
+print("Total: R$ ",total)
+
+dinheiro = float(input("Dinheiro: R$ "))
+troco = dinheiro - total
+
+print("Troco: R$ ",troco)
+
