@@ -1,0 +1,9 @@
+produto = 0
+precodoproduto = 1.99
+valortotal = 0
+
+while produto <= 50:
+    valortotal += produto * precodoproduto
+    print (produto, 'produto(s) - R$', valortotal)
+    produto += 1
+    
