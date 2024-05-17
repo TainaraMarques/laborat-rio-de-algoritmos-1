@@ -1,0 +1,69 @@
+idade = 0
+maioridade = 0
+contador = 0
+anormal = 0
+porcolhoV = 0
+loiras = 0
+cabeloC = 0
+cabeloP = 0
+olhoA = 0
+olhoV= 0
+olhoC = 0
+m = 0
+f = 0
+
+for pessoas in range (15):
+    sexo = input('informe seu sexo M (masculino) F (feminino): ')
+    cor_olhos = input('infirme a cor dos seus olhos A (azul), V (verde) e C (castanho)')
+    cor_cabelo = input ('informe a cor do seu cabelo L (loiro), C (castanho) e P (preto)')
+    idade = int(input('digite sua idade'))
+
+    if cor_cabelo == "l":
+        loiras+= 1
+    
+    elif cor_cabelo == "c":
+        cabeloC+= 1
+
+    elif cor_cabelo == "p":
+        cabeloP += 1    
+
+    if cor_olhos == "a":
+        olhoA += 1
+
+    elif cor_olhos == "v":
+        olhoV += 1
+
+    elif cor_olhos == "c":
+        olhoC += 1
+
+    if sexo == "m":
+        m+=1
+
+    elif sexo == "f":
+        f+=1
+
+    if contador == 0:
+        maioridade = idade
+
+    if sexo == "f" and idade > 18 and idade < 35 and cor_olhos == "v" and cor_cabelo == "l":
+        anormal += 1
+
+pessoas +=1
+
+porc_olhosV = (olhoV * 100) / 15
+porc_olhosA = (olhoA * 100) / 15
+porc_olhosC = (olhoC * 100) / 15
+
+porc_loiras = (loiras * 100) / 15
+porc_cabeloC = (cabeloC * 100) / 15
+porc_cabeloP = (cabeloP * 100) / 15
+
+porc_sexoM = m * 100 /15
+porc_sexoF = f * 100 /15
+
+print('a maior idade é ', maioridade)
+print('gostosa', anormal)
+print('porcentagem de pessoas com olhos verdes, azuis e castanho', porc_olhosV, porc_olhosA, porc_olhosC)
+print('porcentagem de pessoas com cabelos loiro, castanho e preto', porc_loiras, porc_cabeloC, porc_cabeloP)
+print('porcentagem masculina', porc_sexoM)
+print('porcentagem feminina', porc_sexoF)
