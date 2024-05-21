@@ -1,0 +1,26 @@
+jornalA = 0
+jornalB = 0
+jornalC = 0
+porcA = 0
+porcB = 0
+porcC = 0
+
+for n in range (0,10):
+    opniao = input('qual o jornal que vc mais lê A,B OU C:').upper()
+
+    if opniao == "A":
+        jornalA += 1
+
+    elif opniao == "B":
+        jornalB += 1
+
+    else:
+        jornalC += 1
+
+porcA = (jornalA * 100) /10
+porcB = (jornalB * 100) /10
+porcC = (jornalC * 100) /10
+
+print('Porcentagens de pessoas que leem o jornal A', porcA)
+print('Porcentagens de pessoas que leem o jornal A', porcB)
+print('Porcentagens de pessoas que leem o jornal A', porcC)
