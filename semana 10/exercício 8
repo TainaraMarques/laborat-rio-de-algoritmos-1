@@ -1,0 +1,14 @@
+dentroI = 0
+foraI = 0
+
+for n in range (0,10):
+    n=int(input('digite um numero'))
+
+    if n <= 20 and n >= 10:
+        dentroI += 1
+
+    else:
+        foraI += 1
+
+print('O número de números dentro do intervalo é', dentroI)
+print('O número de números dentro do intervalo é', foraI)
