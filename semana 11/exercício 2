@@ -1,0 +1,11 @@
+valores = []
+while len(valores) < 10:
+    valor = int(input("Digite um valor inteiro: "))
+    valores.append(valor)
+
+maiores_que_100 = [valor for valor in valores if valor > 100]
+
+print("\nValores digitados:", valores)
+print("Quantidade de valores maiores que 100:", len(maiores_que_100))
+if len(maiores_que_100) > 0:
+    print("Valores maiores que 100:", maiores_que_100)
