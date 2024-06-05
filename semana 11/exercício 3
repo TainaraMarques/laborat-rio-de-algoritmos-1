@@ -1,0 +1,12 @@
+valores = set()
+while len(valores) < 10:
+    valor = int(input("Digite um valor inteiro: "))
+    valores.add(valor)
+
+vetor = list(valores)  # Convertendo o conjunto para lista
+
+pares = [(indice, valor) for indice, valor in enumerate(vetor) if valor % 2 == 0]
+
+print("\nValores pares e suas respectivas posições:")
+for indice, valor in pares:
+    print(f"Posição {indice}: {valor}")
