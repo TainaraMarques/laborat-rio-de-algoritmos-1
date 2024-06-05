@@ -1,0 +1,12 @@
+vetor_A = []
+while len(vetor_A) < 10:
+    valor = int(input("Digite um valor inteiro: "))
+    if valor not in vetor_A:
+        vetor_A.append(valor)
+
+vetor_B = [0] * len(vetor_A)
+for i in range(len(vetor_A)):
+    vetor_B[i] = vetor_A[-i-1]
+
+print("\nValores de A:", vetor_A)
+print("Valores de B (ordem contrária):", vetor_B)
