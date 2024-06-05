@@ -1,0 +1,49 @@
+vetor = []
+
+while True:
+    print("\nMenu:")
+    print("1 - Inserir item")
+    print("2 - Retirar item")
+    print("3 - Listar itens")
+    print("4 - Retirar todos os itens")
+    print("5 - Sair")
+
+    opcao = input("Digite o número da opção desejada: ")
+
+    if opcao == "1":
+        item = input("Digite o item a ser inserido: ")
+        vetor.append(item)
+        print("Item inserido com sucesso!")
+
+    elif opcao == "2":
+        if len(vetor) == 0:
+            print("O vetor está vazio. Não há itens para retirar.")
+        else:
+            item = input("Digite o item a ser retirado: ")
+            if item in vetor:
+                vetor.remove(item)
+                print("Item retirado com sucesso!")
+            else:
+                print("O item não foi encontrado no vetor.")
+
+    elif opcao == "3":
+        if len(vetor) == 0:
+            print("O vetor está vazio.")
+        else:
+            print("Itens no vetor:")
+            for item in vetor:
+                print(item)
+
+    elif opcao == "4":
+        if len(vetor) == 0:
+            print("O vetor já está vazio.")
+        else:
+            vetor.clear()
+            print("Todos os itens foram retirados do vetor.")
+
+    elif opcao == "5":
+        print("Saindo do programa...")
+        break
+
+    else:
+        print("Opção inválida. Por favor, digite um número válido.")
