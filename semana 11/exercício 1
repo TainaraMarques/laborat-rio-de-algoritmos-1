@@ -1,0 +1,13 @@
+vetor = []
+for i in range(8):
+    num = int(input("Digite o um número inteiro: "))
+    vetor.append(num)
+
+maiores_que_30 = [num for num in vetor if num > 30]
+soma_maiores_que_30 = sum(maiores_que_30)
+soma_total = sum(vetor)
+
+print("\nValores do vetor:", vetor)
+print("Quantidade de números maiores que 30:", len(maiores_que_30))
+print("Soma dos números maiores que 30:", soma_maiores_que_30)
+print("Soma de todos os números:", soma_total)
