@@ -1,0 +1,23 @@
+vetor = []
+
+for i in range(5):
+    n = int(input('digite um número'))
+    vetor.append(n)
+
+menornumero = vetor[0]
+maiornumero = vetor [0]
+maiorposicao = 0
+menorposicao = 0
+for i in range(1,len(vetor)):
+    if vetor[i] > maiornumero:
+        maiornumero = vetor[i]
+        maiorposicao = i
+
+    elif vetor[i] < menornumero:
+        menornumero = vetor[i]
+        menorposicao = i
+
+
+print('o maior numero é', maiornumero, 'e esta na posição', maiorposicao)
+
+print('o menor numero é', menornumero, 'e esta na posição', menorposicao)
