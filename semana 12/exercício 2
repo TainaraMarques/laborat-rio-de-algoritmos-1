@@ -1,0 +1,13 @@
+vetor = []
+soma = 0
+
+for i in range(5):
+    n = int(input('digite um número'))
+    vetor.append(n)
+
+if len(vetor)> 0:
+    for n in vetor:
+        soma += n
+    m = soma/len(vetor)
+    print(soma)
+    print(m)
