@@ -1,0 +1,16 @@
+numeros = [12, 7, 34, 18, 25, 3, 49, 41, 15, 29]
+
+pares = 0
+impares = 0
+
+for numero in numeros:
+    if numero % 2 == 0:
+        pares += 1
+    else:
+        impares += 1
+
+print("Lista gerada:", numeros)
+print("Quantidade de números pares:", pares)
+print("Quantidade de números ímpares:", impares)
+
+
