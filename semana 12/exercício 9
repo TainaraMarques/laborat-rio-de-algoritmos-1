@@ -1,0 +1,17 @@
+array1 = []
+array2 = []
+resultado_das_multiplicacoes = []
+
+for i in range(5):
+    n = int(input("Digite um número para o array 1: "))
+    array1.append(n)
+
+for i in range(5):
+    n = int(input("Digite um número para o array 2: "))
+    array2.append(n)
+
+for i in range(5):
+    multiplicacao = array1[i] * array2[i]
+    resultado_das_multiplicacoes.append(multiplicacao)
+
+print("Estes são os resultados das multiplicacoes:", resultado_das_multiplicacoes)
