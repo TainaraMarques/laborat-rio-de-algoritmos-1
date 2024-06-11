@@ -1,0 +1,58 @@
+array = []
+
+sair = False
+
+while opcao != sair:
+    print("\nMenu:")
+    print("1 - Inserir item")
+    print("2 - Listar itens")
+    print("3 - Retirar item")
+    print("4 - Retirar todos os itens")
+    print("5 - Contar quantos itens são maiores que um valor X")
+    print("6 - Verificar se um determinado número está presente no array")
+    print("7 - Encontrar o maior e o menor item do array")
+    print("8 - Sair")
+
+    opcao = input("Escolha uma opção: ")
+
+    if opcao == "1":
+        num = int(input("Digite um número par para inserir no array: "))
+        if num % 2 == 0:
+            array.append(num)
+        else:
+            print("Erro: Apenas números pares são permitidos.")
+    elif opcao == "2":
+        print("Itens no array:", array)
+    elif opcao == "3":
+        if array:
+            num = int(input("Digite o número a ser removido: "))
+            if num in array:
+                array.remove(num)
+            else:
+                print("Número não encontrado no array.")
+        else:
+            print("Array vazio.")
+    elif opcao == "4":
+        array.clear()
+        print("Array esvaziado.")
+    elif opcao == "5":
+        x = int(input("Digite o valor de X: "))
+        count = sum(1 for item in array if item > x)
+        print("Quantidade de itens maiores que", x, ":", count)
+    elif opcao == "6":
+        num = int(input("Digite o número a ser verificado: "))
+        if num in array:
+            print(num, "está presente no array.")
+        else:
+            print(num, "não está presente no array.")
+    elif opcao == "7":
+        if array:
+            print("Maior item:", max(array))
+            print("Menor item:", min(array))
+        else:
+            print("Array vazio.")
+    elif opcao == "8":
+        print("Saindo do programa...")
+        sair = True
+    else:
+        print("Opção inválida. Por favor, escolha uma opção válida.")
