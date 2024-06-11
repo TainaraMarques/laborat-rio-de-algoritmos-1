@@ -1,0 +1,23 @@
+tamanho = int(input("Digite o tamanho dos arrays: "))
+
+array1 = []
+array2 = []
+
+print("Preencha o primeiro array:")
+for i in range(tamanho):
+    numero = int(input(f"Digite o {i+1}º número inteiro: "))
+    array1.append(numero)
+
+print("\nPreencha o segundo array:")
+for i in range(tamanho):
+    numero = int(input(f"Digite o {i+1}º número inteiro: "))
+    array2.append(numero)
+
+soma_array = []
+for i in range(tamanho):
+    soma = array1[i] + array2[i]
+    soma_array.append(soma)
+
+print("\nArray 1:", array1)
+print("Array 2:", array2)
+print("Soma dos elementos correspondentes dos arrays:", soma_array)
