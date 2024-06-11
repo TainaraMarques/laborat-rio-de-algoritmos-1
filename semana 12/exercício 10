@@ -1,0 +1,19 @@
+array = []
+
+for i in range(5):
+    n = int(input("Digite um número para o array 1: "))
+    array.append(n)
+
+repetido = False
+
+for i in range(len(array)):
+    for j in range(i + 1, len(array)):
+        if array[i] == array[j]:
+            repetido = True
+            break
+
+if repetido:
+    print("Existem elementos iguais no array.")
+
+else:
+     print ("Não existem elementos iguais! ")
