@@ -1,0 +1,13 @@
+array = []
+
+for i in range(5):
+    n = int(input("digite um numero "))
+    array.append(n)
+
+numerodigitado = int(input("digite um numero para verificar se ele está no array "))
+
+if numerodigitado in array:
+    print("o número está presente no array")
+
+else:
+    print("o número não está presente no array")
