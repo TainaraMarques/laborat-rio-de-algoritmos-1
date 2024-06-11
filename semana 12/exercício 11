@@ -1,0 +1,10 @@
+array = []
+
+for i in range(10):
+    novo_elemento = int(input("Insira um elemento: "))
+    while novo_elemento in array:
+        print("Esse elemento já existe. Insira um valor distinto.")
+        novo_elemento = int(input("Insira um elemento: "))
+    array.append(novo_elemento)
+
+print("Array final:", array)
