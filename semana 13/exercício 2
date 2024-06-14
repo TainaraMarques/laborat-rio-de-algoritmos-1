@@ -1,0 +1,13 @@
+def dobro(valor):
+    d = valor * 2
+    print ("O dobro de", valor, "é ", d)
+
+def triplo(valor):
+    t = valor * 3
+    print("o triplo de", valor,  "é ", t)
+
+def main():
+    valor = int(input("digite um valor: "))
+    dobro(valor)
+    triplo(valor)
+main()
