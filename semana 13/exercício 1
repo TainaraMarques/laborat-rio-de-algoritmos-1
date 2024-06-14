@@ -1,8 +1,7 @@
-def main():
-    print ("Olá")
-
 def saida():
     print("tchau")
 
+def main():
+    print ("Olá")
+    saida()
 main()
-saida()
