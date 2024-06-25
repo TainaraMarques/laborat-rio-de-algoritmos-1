@@ -1,0 +1,24 @@
+def aprovado(m):
+    if m >= 7:
+        print("aprovado") 
+
+def recuperacao(m):
+    if 4 <= m < 7:
+        print("você está em recuperação")
+
+def reprovado(m):
+    if m < 4:
+        print ("Reprovado!!")
+
+def main():
+    soma = 0
+    for main in range(5):
+        n = float(input("digite sua nota: "))
+        soma += n
+    m = soma / 5
+
+    aprovado(m)
+    recuperacao(m)
+    reprovado(m)
+
+main()
