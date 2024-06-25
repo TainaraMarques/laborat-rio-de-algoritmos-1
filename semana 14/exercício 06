@@ -1,0 +1,19 @@
+def pesquisa_ibope(respostas):
+    total_sim = 0
+    total_nao = 0
+    
+    for resposta in respostas:
+        if resposta.lower() == 'sim':
+            total_sim += 1
+        elif resposta.lower() == 'não' or resposta.lower() == 'nao':
+            total_nao += 1
+    
+    print(f"Total de pessoas que responderam sim: {total_sim}")
+    print(f"Total de pessoas que responderam não: {total_nao}")
+
+respostas = [
+    'sim', 'não', 'sim', 'sim', 'não', 'sim', 'não', 'sim', 'sim', 'não',
+    'não', 'sim', 'não', 'sim', 'sim', 'não', 'sim', 'não', 'sim', 'não'
+]
+
+pesquisa_ibope(respostas)
