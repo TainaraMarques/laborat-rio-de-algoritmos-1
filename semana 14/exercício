@@ -1,0 +1,15 @@
+def soma_naturais(n):
+    if n < 1:
+        return 0
+    return n * (n + 1) // 2
+
+numero = 7
+print("A soma dos números naturais até ", numero, "é:", soma_naturais(numero))
+
+numero = 10
+print("A soma dos números naturais até ", numero, "é:", soma_naturais(numero))
+
+numero = 0
+print("A soma dos números naturais até ", numero, "é:", soma_naturais(numero))
+
+
