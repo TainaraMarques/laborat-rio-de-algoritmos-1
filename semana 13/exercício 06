@@ -1,0 +1,13 @@
+def somaImposto(taxaImposto, custo):
+    imposto = custo * (taxaImposto / 100) 
+    custo += imposto 
+    return custo 
+
+custo_sem_imposto = 100 
+taxa_de_imposto = 10 
+
+custo_com_imposto = somaImposto(taxa_de_imposto, custo_sem_imposto)
+
+print(f"Custo sem imposto: R$", custo_sem_imposto)
+print(f"Taxa de imposto:", taxa_de_imposto)
+print(f"Custo com imposto: R$", custo_com_imposto)
