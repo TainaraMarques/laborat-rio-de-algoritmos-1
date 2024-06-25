@@ -1,0 +1,8 @@
+def soma_numeros(num1, num2):
+    return num1 + num2
+
+numero1 = 26
+numero2 = 8
+
+resultado = soma_numeros(numero1, numero2)
+print("A soma de ", numero1,  " e ", numero2, "é: ", resultado)
