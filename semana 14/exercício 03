@@ -1,0 +1,8 @@
+def dobro(numero):
+    return numero * 2
+
+num = 4
+print("O dobro de ", num, "é: ", dobro(num))  
+
+num = -9
+print("O dobro de " , num,  "é: ", dobro(num))  
