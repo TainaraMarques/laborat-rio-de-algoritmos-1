@@ -1,0 +1,22 @@
+def calcular_valor_compra(total_laranjas):
+    if total_laranjas <= 12:
+        preco_unitario = 0.40
+    else:
+        preco_unitario = 0.25
+    
+    valor_total = total_laranjas * preco_unitario
+    return valor_total
+
+def ler_numero_inteiro(mensagem):
+    while True:
+        try:
+            numero = int(input(mensagem))
+            return numero
+        except ValueError:
+            print("Por favor, digite um número inteiro válido.")
+
+total_laranjas = ler_numero_inteiro("Digite o total de laranjas compradas: ")
+
+valor_final = calcular_valor_compra(total_laranjas)
+
+print("Valor total da compra:" ,valor_final)
