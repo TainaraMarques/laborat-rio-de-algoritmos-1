@@ -1,0 +1,20 @@
+def calcular_porcentagens(opinioes):
+    total_entrevistados = len(opinioes)
+    contagem_A = opinioes.count('A')
+    contagem_B = opinioes.count('B')
+    contagem_C = opinioes.count('C')
+    
+    porcentagem_A = (contagem_A / total_entrevistados) * 100
+    porcentagem_B = (contagem_B / total_entrevistados) * 100
+    porcentagem_C = (contagem_C / total_entrevistados) * 100
+    
+    porcentagens = sorted([porcentagem_A, porcentagem_B, porcentagem_C])
+    
+    print("Porcentagem de leitores do jornal A: ", porcentagens[0], " %")
+    print("Porcentagem de leitores do jornal B: ", porcentagens[1], " %")
+    print("Porcentagem de leitores do jornal C: "  , porcentagens[2], " %")
+
+opinioes = ['A', 'B', 'C', 'A', 'B', 'C', 'A', 'B', 'C', 'A',
+            'B', 'C', 'A', 'B', 'C', 'A', 'B', 'C', 'A', 'B']
+
+calcular_porcentagens(opinioes)
