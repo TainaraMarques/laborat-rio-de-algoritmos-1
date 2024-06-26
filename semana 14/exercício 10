@@ -1,0 +1,33 @@
+def leitura_dados():
+    A = []
+    B = []
+    
+    print("Preenchendo o array A:")
+    for i in range(5):
+        valor = float(input(f"Digite o valor para A[{i}]: "))
+        A.append(valor)
+    
+    print("\nPreenchendo o array B:")
+    for i in range(5):
+        valor = float(input(f"Digite o valor para B[{i}]: "))
+        B.append(valor)
+    
+    return A, B
+
+def soma_dos_dados(A, B):
+    C = []
+    
+    for i in range(len(A)):
+        C.append(A[i] + B[i])
+    
+    return C
+
+def apresenta_valor_C(C):
+    print("\nValores do vetor C:")
+    for valor in C:
+        print(valor)
+
+A, B = leitura_dados()
+C = soma_dos_dados(A, B)
+apresenta_valor_C(C)
+
