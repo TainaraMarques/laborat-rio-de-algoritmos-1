@@ -1,0 +1,24 @@
+def encontrar_maior_menor(array):
+    if not array:
+        return None, None
+    
+    maior = array[0]
+    menor = array[0]
+    
+    for num in array:
+        if num > maior:
+            maior = num
+        if num < menor:
+            menor = num
+            
+    return maior, menor
+
+numeros = [3, 7, 2, 9, 1, 5, 4, 8, 6]
+maior_numero, menor_numero = encontrar_maior_menor(numeros)
+print(f"O maior número no array é: {maior_numero}")
+print(f"O menor número no array é: {menor_numero}")
+
+array_vazio = []
+maior_numero, menor_numero = encontrar_maior_menor(array_vazio)
+print(f"O maior número no array vazio é: {maior_numero}")
+print(f"O menor número no array vazio é: {menor_numero}")
